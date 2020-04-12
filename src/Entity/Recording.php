@@ -39,7 +39,17 @@ class Recording
     /**
      * @ORM\Column(type="integer")
      */
-    private $TASk_ID;
+    
+     /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Task", inversedBy="record")
+     * @ORM\JoinColumn(name="task_id",referencedColumnName="id",onDelete="CASCADE",nullable=false)
+     */
+    private $task;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\UserRecord", mappedBy="record")
+     */
+    private $record_user;
 
     public function getId(): ?int
     {

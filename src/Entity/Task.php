@@ -35,8 +35,14 @@ class Task
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Group", inversedBy="task")
+     * @ORM\JoinColumn(name="group_id",referencedColumnName="id",onDelete="CASCADE",nullable=false)
      */
     private $group;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Recording", mappedBy="task")
+     */
+    private $record;
 
     public function getId(): ?int
     {

@@ -35,6 +35,11 @@ class Group
      */
     private $task;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\GroupUser", mappedBy="group")
+     */
+    private $group_user;
+
     public function getName(): ?string
     {
         return $this->name;

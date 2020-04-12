@@ -16,15 +16,19 @@ class GroupUser
      */
     private $id;
 
-    /**
-     * @ORM\Column(type="integer")
+     /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="user_group")
+     * @ORM\JoinColumn(name="user_id",referencedColumnName="id",onDelete="CASCADE",nullable=false)
      */
-    private $USER_ID;
+    private $user;
 
-    /**
-     * @ORM\Column(type="integer")
+    
+     /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\group", inversedBy="group_user")
+     * @ORM\JoinColumn(name="group_id",referencedColumnName="id",onDelete="CASCADE",nullable=false)
      */
-    private $GROUP_ID;
+    private $group;
+
 
     public function getId(): ?int
     {

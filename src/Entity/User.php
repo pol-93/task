@@ -43,6 +43,16 @@ class User implements UserInterface
      */
     private $avatar;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\UserRecord", mappedBy="user")
+     */
+    private $user_record;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\GroupUser", mappedBy="user")
+     */
+    private $user_group;
+
     public function getId(): ?int
     {
         return $this->id;
