@@ -23,9 +23,9 @@ class User implements UserInterface
     private $email;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="json")
      */
-    private $roles;
+    private $roles = [];
 
     /**
      * @var string The hashed password
@@ -34,24 +34,14 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @ORM\Column(type="string", length=50)
+     * @ORM\Column(type="string", length=255)
      */
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=100, nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $avatar;
-
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\UserRecord", mappedBy="user")
-     */
-    private $user_record;
-
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\GroupUser", mappedBy="user")
-     */
-    private $user_group;
 
     public function getId(): ?int
     {
@@ -83,16 +73,16 @@ class User implements UserInterface
     /**
      * @see UserInterface
      */
-    public function getRoles(): int
+    public function getRoles(): array
     {
         $roles = $this->roles;
-
-        return $roles;
+        // guarantee every user at least has ROLE_USER
+        $roles[] = 'ROLE_USER';
 
         return array_unique($roles);
     }
 
-    public function setRoles(int $roles): self
+    public function setRoles(array $roles): self
     {
         $this->roles = $roles;
 
@@ -148,7 +138,7 @@ class User implements UserInterface
         return $this->avatar;
     }
 
-    public function setAvatar(?string $avatar): self
+    public function setAvatar(string $avatar): self
     {
         $this->avatar = $avatar;
 

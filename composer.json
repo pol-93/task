@@ -19,12 +19,15 @@
         "symfony/framework-bundle": "4.3.*",
         "symfony/monolog-bundle": "^3.4",
         "symfony/orm-pack": "^1.0",
+        "symfony/security-bundle": "4.3.*",
         "symfony/twig-pack": "^1.0",
         "symfony/validator": "4.3.*",
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
-        "symfony/maker-bundle": "^1.15"
+        "symfony/maker-bundle": "^1.15",
+        "symfony/profiler-pack": "^1.0",
+        "symfony/var-dumper": "4.3.*"
     },
     "config": {
         "preferred-install": {
