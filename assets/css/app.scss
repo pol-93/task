@@ -1,0 +1,265 @@
+@import './helper/variables';
+@import './fonts/font';
+
+@import '~bootstrap';
+@import '~font-awesome';
+@import '~swiper/css/swiper.css';
+
+
+@import './layout/header';
+
+
+body {
+    background-color : $lightgray;
+    font-family: Fjalla-One;
+}
+
+
+/* swiper general overrides */
+
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+    background: none;
+    position: relative;
+}
+.swiper-pagination-bullet:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    top: 1px;
+    margin: auto;
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+.swiper-pagination-bullet-active:after {
+    opacity: 1;
+    background-color: #fff;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    background-image: none;
+    font-size:16px;
+    -webkit-transition: all 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: all 375ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    display:none;
+}
+/* end swiper general overrides  */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .content{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+    font-size: 18px;
+    color:#fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+    left: 0;
+}
+
+.dark-effect-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-slider .swiper-button-next {
+    bottom: 10px;
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: rotate(90deg);
+    margin-left: -33px;
+}
+
+.login-slider .swiper-pagination-bullet{
+    position:relative;
+}
+
+.login-slider .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 20px 0px 0px auto;
+    text-align: right;
+}
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 6px 0;
+    display: block;
+}
+.login-slider .swiper-pagination-bullet {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.login-slider .swiper-pagination-bullet:after {
+    content: "";
+    position:static;
+    display: inline-block;
+    height: 20px;
+    margin: auto;
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.6;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.login-slider .swiper-pagination-bullet-active:after {
+    opacity: 1;
+    background-color: #fff;
+    border:2px solid #000;
+}
+
+.login-slider .swiper-pagination-bullet:before{
+    content: "Welcome";
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.3;
+    margin-right: 15px;
+}
+.login-slider .swiper-pagination-bullet:nth-child(2):before{
+    content:"About";
+}
+
+.login-slider .swiper-pagination-bullet:nth-child(3):before{
+    content:"Sign In";
+}
+
+.login-slider .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 20px 0;
+}
+
+
+.login-slider .swiper-container-vertical > .swiper-pagination-bullets {
+    right: 35px;
+}
+
+
+.login-slider .text-content{
+    position: absolute;
+    top: 75px;
+    bottom: 10%;
+    left: 35px;
+    right: 155px;
+    z-index: 1;
+    color:#fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+.login-slider .title {
+    font-size: 40px;
+}
+.login-slider .subtitle{
+    font-size: 25px;
+}
+
+.login-slider .text{
+    font-size: 18px;
+}
+
+.login-slider .title,
+.login-slider .subtitle,
+.login-slider .text{
+    width:100%;
+}
+
+.bg{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.Register, .login{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: 1;
+    bottom: 0;
+    right: calc(100% - 350px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.Register .wrap, .login .wrap{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+
+.Register #create_user .form-group:nth-child(4){
+    margin-bottom:0px;
+}
+
+.login{
+    position:absolute;
+    left:350px;
+    top:75px;
+    bottom:0;
+    right:180px;
+}
+
+

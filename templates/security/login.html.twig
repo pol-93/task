@@ -4,35 +4,117 @@
 
 {% block body %}
 
-<form method="post">
+<section class="module login-slider" data-module="loginSlider">
 
-    {% if error %}
-        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-    {% endif %}
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <style>.bg-1{background-image:url('{{asset('build/images/login/picture-1.jpg')}}')} </style>
+                        <div data-swiper-parallax-x="-200" data-swiper-parallax-duration="1500" class="logo">
+                            <img src="{{ asset('build/images/login/task-logo.png') }}"/>
+                        </div>
+                        <div class="text-content">
+                            <div class="wrap">
+                                <div class="title" data-swiper-parallax-x="-200"  data-swiper-parallax-duration="1500">
+                                    WELCOME TO TASK
+                                </div>
+                                <div class="subtitle" data-swiper-parallax-x="-200" data-swiper-parallax-duration="1500">
+                                    what is task ? how task works ?
+                                </div>
+                                <div class="text" data-swiper-parallax-x="-200" data-swiper-parallax-duration="1500">
+                                    <p>
+                                        Well dont' worry... scroll down or click here for more information...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg bg-1" data-swiper-parallax-opacity="0.4">
+                            <div class="dark-effect-layer"></div>
+                        </div>
 
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputEmail">Email</label>
-    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
-    <label for="inputPassword">Password</label>
-    <input type="password" name="password" id="inputPassword" class="form-control" required>
+                    </div>
+                    <div class="swiper-slide">
+                        <style>.bg-2{background-image:url('{{asset('build/images/login/picture-2.jpg')}}')} </style>
+                        <div data-swiper-parallax-x="-200" data-swiper-parallax-duration="1500" class="logo">
+                            <img src="{{ asset('build/images/login/task-logo.png') }}"/>
+                        </div>
+                        <div class="text-content">
+                            <div class="wrap">
+                                <div class="title" data-swiper-parallax-x="-200"  data-swiper-parallax-duration="1500">
+                                    WHAT IS TASK
+                                </div>
+                                <div class="text" data-swiper-parallax-x="-200" data-swiper-parallax-duration="1500">
+                                    <p>
+                                        "task" is a tool to control who works more in home tasks.
+                                        To do this you can create a group where you will add your family members and home tasks.
+                                        Each task has points, when you complete a task you will have to register it. if the members of the group accept the task you done then you will earn the points of this task.
+                                        You don't win anything for having many points but at least it is reflected in some place what member of your family works more at home tasks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg bg-2" data-swiper-parallax-opacity="0.4">
+                            <div class="dark-effect-layer"></div>
+                        </div>
 
-    <input type="hidden" name="_csrf_token"
-           value="{{ csrf_token('authenticate') }}"
-    >
+                    </div>
+                    <div class="swiper-slide">
+                        <style>.bg-3{background-image:url('{{asset('build/images/login/picture-3.jpg')}}')} </style>
+                        <div data-swiper-parallax-x="-200" data-swiper-parallax-duration="1500" class="logo">
+                            <img src="{{ asset('build/images/login/task-logo.png') }}"/>
+                        </div>
+                        <div class="bg bg-3" data-swiper-parallax-opacity="0.4">
+                            <div data-swiper-parallax-x="-200" data-swiper-parallax-duration="1500" class="Register">
+                                <div class="wrap">
+                                    <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+                                    {{ form(createUser) }}
+                                </div>
+                            </div>
+                            <div data-swiper-parallax-x="-200" data-swiper-parallax-duration="1500" class="login">
+                                <div class="wrap">
+                                    <form method="post">
+                                        {% if error %}
+                                            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                                        {% endif %}
 
-    {#
-        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-        See https://symfony.com/doc/current/security/remember_me.html
+                                        <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+                                        <div class="form-group">
+                                            <label for="inputEmail">Email</label>
+                                            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword">Password</label>
+                                            <input type="password" name="password" id="inputPassword" class="form-control" required>
+                                        </div>
+                                        <input type="hidden" name="_csrf_token"
+                                               value="{{ csrf_token('authenticate') }}"
+                                        >
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="_remember_me"> Remember me
+                                            </label>
+                                        </div>
 
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" name="_remember_me"> Remember me
-            </label>
-        </div>
-    #}
 
-    <button class="btn btn-lg btn-primary" type="submit">
-        Sign in
-    </button>
-</form>
+                                        <button class="btn btn-primary" type="submit">
+                                            Sign in
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="dark-effect-layer"></div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+            </div>
+</section>
+
 {% endblock %}

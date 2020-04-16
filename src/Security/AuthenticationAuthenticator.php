@@ -19,7 +19,8 @@ use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Symfony\Component\Security\Guard\Authenticator\AbstractFormLoginAuthenticator;
 use Symfony\Component\Security\Http\Util\TargetPathTrait;
 
-class AuthenticationAuthenticator extends AbstractFormLoginAuthenticator
+class
+AuthenticationAuthenticator extends AbstractFormLoginAuthenticator
 {
     use TargetPathTrait;
 
@@ -90,10 +91,9 @@ class AuthenticationAuthenticator extends AbstractFormLoginAuthenticator
         }
 
 
-       return new RedirectResponse('dashboard');
+       return new RedirectResponse('/');
 
         // For example : return new RedirectResponse($this->urlGenerator->generate('some_route'));
-        throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
     }
 
     protected function getLoginUrl()
