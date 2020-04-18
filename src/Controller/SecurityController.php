@@ -16,11 +16,12 @@ use Symfony\Component\HttpFoundation\Request;
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/login", name="app_login")
+     * @Route("/login", name="app_login", methods={"POST"})
      */
 
     public function login(Request $request, AuthenticationUtils $authenticationUtils): Response
     {
+
 
         $user = new User();
 
@@ -29,7 +30,8 @@ class SecurityController extends AbstractController
 
 
         $form = $this->createForm(CreateUserType::class, $user, [
-            'action' => $this->generateUrl('register'),
+            'action' => $this->generateUrl('registerAction'),
+            'attr' => ['id' => 'generateUser'],
             'method' => 'POST',
         ]);
 

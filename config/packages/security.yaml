@@ -2,9 +2,6 @@ security:
     encoders:
         App\Entity\User:
             algorithm: auto
-
-
-
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
         # used to reload user from session & other features (e.g. switch_user)
@@ -23,9 +20,29 @@ security:
             guard:
                 authenticators:
                     - App\Security\AuthenticationAuthenticator
+            json_login:
+                check_path: /login
             logout:
                 path: app_logout
                 target: /login
+        login:
+            pattern:  ^/api/login
+            stateless: true
+            anonymous: true
+            form_login:
+                check_path:               /api/login_check
+                success_handler:          lexik_jwt_authentication.handler.authentication_success
+                failure_handler:          lexik_jwt_authentication.handler.authentication_failure
+                require_previous_session: false
+
+        api:
+            pattern:   ^/api/v1
+            stateless: true
+            anonymous: false
+            provider: app_user_provider
+            guard:
+                authenticators:
+                    - lexik_jwt_authentication.jwt_token_authenticator
                 # where to redirect after logout
                 # target: app_any_route
 

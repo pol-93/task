@@ -1,12 +1,8 @@
 @import './helper/variables';
 @import './fonts/font';
-
 @import '~bootstrap';
 @import '~font-awesome';
 @import '~swiper/css/swiper.css';
-
-
-@import './layout/header';
 
 
 body {
@@ -167,11 +163,9 @@ body {
     margin: 20px 0;
 }
 
-
 .login-slider .swiper-container-vertical > .swiper-pagination-bullets {
     right: 35px;
 }
-
 
 .login-slider .text-content{
     position: absolute;
@@ -223,10 +217,10 @@ body {
 .Register, .login{
     position: absolute;
     top: 75px;
-    left: 0;
+    left: 0px;
     z-index: 1;
     bottom: 0;
-    right: calc(100% - 350px);
+    right: calc(50% + 70px);
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -248,6 +242,7 @@ body {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
+    width: 300px;
 }
 
 .Register #create_user .form-group:nth-child(4){
@@ -255,11 +250,11 @@ body {
 }
 
 .login{
-    position:absolute;
-    left:350px;
-    top:75px;
-    bottom:0;
-    right:180px;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 75px;
+    bottom: 0;
+    right: 140px;
 }
 
 

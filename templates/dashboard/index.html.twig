@@ -1,7 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Hello DashboardController!{% endblock %}
-
+{% block stylesheets %}
+    {{ encore_entry_link_tags('dashboard') }}
+{% endblock %}
 {% block body %}
 
     {% if app.user %}
@@ -10,6 +12,7 @@
         </div>
     {% endif %}
 
-
-
+{% block javascripts %}
+    {{ encore_entry_script_tags('dashboard') }}
+{% endblock %}
 {% endblock %}
