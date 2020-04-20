@@ -2,34 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ff2a66c-4990-423d-922b-8f870f8cc503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/gesdinet_jwt_refresh_token.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ListController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/userAPIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listeners/AuthenticationSuccessListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/list/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/LoginJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/LoginJS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/fos_rest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/fos_rest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/APIController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ListController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Security/AuthenticationAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/AuthenticationAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/api/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/api/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +203,7 @@
       <workItem from="1587318967980" duration="592000" />
       <workItem from="1587319580842" duration="8405000" />
       <workItem from="1587365468979" duration="7909000" />
-      <workItem from="1587376855632" duration="13441000" />
+      <workItem from="1587376855632" duration="15675000" />
     </task>
     <servers />
   </component>
@@ -268,14 +246,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" width="607" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1587377001209" />
-    <state x="296" y="150" width="672" height="677" key="run.anything.popup" timestamp="1587309958104">
+    <state x="296" y="150" width="672" height="677" key="run.anything.popup" timestamp="1587397658074">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="296" y="150" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1587309958104" />
-    <state x="296" y="-7" width="672" height="676" key="search.everywhere.popup" timestamp="1587387143871">
+    <state x="296" y="150" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1587397658074" />
+    <state x="296" y="-7" width="672" height="676" key="search.everywhere.popup" timestamp="1587396897974">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="296" y="-7" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587387143871" />
+    <state x="296" y="-7" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587396897974" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

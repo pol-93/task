@@ -37,6 +37,7 @@ class ListController extends AbstractFOSRestController
      */
     public function getGroupsAction()
     {
+        /*
         $RAW_QUERY = 'SELECT * FROM group_user';
         $em = $this->getDoctrine()->getManager();
         $statement = $em->getConnection()->prepare($RAW_QUERY);
@@ -46,5 +47,8 @@ class ListController extends AbstractFOSRestController
         $result = $statement->fetchAll();
 
         return $this->view($result, Response::HTTP_OK);
+        */
+
+
     }
 }

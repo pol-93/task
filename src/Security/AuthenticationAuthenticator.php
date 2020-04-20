@@ -47,6 +47,7 @@ AuthenticationAuthenticator extends AbstractFormLoginAuthenticator
 
     public function getCredentials(Request $request)
     {
+
         $credentials = [
             'email' => $request->request->get('email'),
             'password' => $request->request->get('password'),

@@ -59,7 +59,7 @@ security:
          - { path: ^/api/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
          - { path: ^/api/token/refresh, roles: IS_AUTHENTICATED_ANONYMOUSLY }
          - { path: ^/$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-         - { path: ^/dashboard, role: IS_AUTHENTICATED_FULLY }
+         - { path: ^/dashboard, role: IS_AUTHENTICATED_ANONYMOUSLY }
 
 
 
