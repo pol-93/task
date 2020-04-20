@@ -12,14 +12,17 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpClient\HttpClient;
+use Symfony\Component\HttpClient\CurlHttpClient;
+use Symfony\Component\HttpClient\NativeHttpClient;
 
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/login", name="app_login", methods={"POST"})
+     * @Route("/", name="app_login")
      */
 
-    public function login(Request $request, AuthenticationUtils $authenticationUtils): Response
+    public function login(Request $request,AuthenticationUtils $authenticationUtils): Response
     {
 
 
@@ -30,7 +33,7 @@ class SecurityController extends AbstractController
 
 
         $form = $this->createForm(CreateUserType::class, $user, [
-            'action' => $this->generateUrl('registerAction'),
+            'action' => $this->generateUrl('createUser'),
             'attr' => ['id' => 'generateUser'],
             'method' => 'POST',
         ]);
@@ -43,7 +46,10 @@ class SecurityController extends AbstractController
 
         return $this->render('security/login.html.twig', ['last_username' => $lastUsername, 'error' => $error,
             'createUser' => $form->createView()]);
+
     }
+
+
 
     /**
      * @Route("/logout", name="app_logout")

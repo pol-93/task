@@ -2,36 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ff2a66c-4990-423d-922b-8f870f8cc503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/dashboard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/LoginJS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/APIController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/api/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/gesdinet_jwt_refresh_token.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/userAPIController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Listeners/AuthenticationSuccessListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/list/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/LoginJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/LoginJS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/fos_rest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/fos_rest.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/APIController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/AuthenticationAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/AuthenticationAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/api/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/api/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +167,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/jsrouting-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/gesdinet/jwt-refresh-token-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aU7FZJTQn5D7MQPCpFy1lJShi2" />
@@ -183,19 +184,21 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\task\task\assets\css" />
-      <recent name="C:\xampp\htdocs\task\task\assets\img\login" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\task\task\assets\js" />
       <recent name="C:\xampp\htdocs\task\task\assets\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\task\task\src\Listeners" />
+      <recent name="C:\xampp\htdocs\task\task\assets\css" />
+      <recent name="C:\xampp\htdocs\task\task\assets\img\login" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -216,6 +219,13 @@
       <workItem from="1587017268249" duration="34423000" />
       <workItem from="1587114856931" duration="36116000" />
       <workItem from="1587226257270" duration="4780000" />
+      <workItem from="1587317298754" duration="21000" />
+      <workItem from="1587317703205" duration="118000" />
+      <workItem from="1587318082910" duration="863000" />
+      <workItem from="1587318967980" duration="592000" />
+      <workItem from="1587319580842" duration="8405000" />
+      <workItem from="1587365468979" duration="7909000" />
+      <workItem from="1587376855632" duration="13441000" />
     </task>
     <servers />
   </component>
@@ -226,18 +236,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="290" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587149893368">
+    <state x="290" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587306235228">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="290" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1587149893368" />
-    <state x="370" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587226320948">
+    <state x="290" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1587306235228" />
+    <state x="370" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587381118145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="370" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587226320948" />
-    <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1587225898283">
+    <state x="370" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587381118145" />
+    <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1587365496526">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587225898283" />
+    <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587365496526" />
+    <state x="220" y="75" key="IDE.errors.dialog" timestamp="1587379178082">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="220" y="75" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1587379178082" />
     <state x="141" y="0" key="SettingsEditor" timestamp="1586988161944">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -250,18 +264,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="286" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1587046418831" />
-    <state x="0" y="0" width="607" height="680" key="find.popup" timestamp="1587223252959">
+    <state x="0" y="0" width="607" height="680" key="find.popup" timestamp="1587377001209">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" width="607" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1587223252959" />
-    <state x="296" y="150" width="672" height="677" key="run.anything.popup" timestamp="1587228177475">
+    <state x="0" y="0" width="607" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1587377001209" />
+    <state x="296" y="150" width="672" height="677" key="run.anything.popup" timestamp="1587309958104">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="296" y="150" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1587228177475" />
-    <state x="296" y="-7" width="670" height="676" key="search.everywhere.popup" timestamp="1587042303848">
+    <state x="296" y="150" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1587309958104" />
+    <state x="296" y="-7" width="672" height="676" key="search.everywhere.popup" timestamp="1587387143871">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="296" y="-7" width="670" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587042303848" />
+    <state x="296" y="-7" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587387143871" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

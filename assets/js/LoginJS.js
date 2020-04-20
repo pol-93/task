@@ -15,7 +15,8 @@ export default function(){
       });
       self.loginSlider.init($('[data-module="loginSlider"]'));
       self.signUp.init();
-      self.login.logIn();
+      self.logIn.init();
+
     },
     loginSlider : {
       init : function($module) {
@@ -81,53 +82,51 @@ export default function(){
       }
     },
     signUp : {
-        init : function(){
+      init: function () {
 
-          $("#generateUser").on("submit",function(e){
+        $("#generateUser").on("submit", function (e) {
 
+          e.preventDefault();
+
+          var fd = new FormData(document.getElementById("generateUser"));
+          fd.append("CustomField", "This is some extra data");
+          $.ajax({
+            url: $(this).attr("action"),
+            type: "POST",
+            data: fd,
+            processData: false,  // tell jQuery not to process the data
+            contentType: false,
+          }).done(function (data) {
+              console.log(data);
+          });
+
+
+        });
+      }
+    },
+      logIn : {
+        init: function () {
+          self = this;
+          $("#LoginForm").on("submit", function (e) {
             e.preventDefault();
-
-            var fd = new FormData(document.getElementById("generateUser"));
-            fd.append("CustomField", "This is some extra data");
-            $.ajax({
-              url: $(this).attr("action"),
-              type: "POST",
-              data: fd,
-              processData: false,  // tell jQuery not to process the data
-              contentType: false,
-            }).done(function(data) {
-
-            });
-
-
+            self.tryToLogIn("polcerdan@gmail.com","123",this);
           });
         },
-        logIn : {
-          init: function () {
-            $("#LoginForm").on("submit", function (e) {
-              e.preventDefault();
-              this.tryToLogIn();
-            });
-          },
-          tryToLogIn: function (user, password) {
+        tryToLogIn: function (user, password,form) {
+          var data = JSON.stringify({"username":"polcerdan@gmail.com","password":"123"})
+          $.ajax({
+            url: '/api/login_check',
+            type: "POST",
+            contentType: "application/json",
+            data: data,
+            success: function(data, status){
+              console.log("DATA", data);
+            }
 
-              $.ajax({
-                type: "POST",
-                url: $(this).attr("action"),
-                data: {"email":"polcerdan@gmail.com","password":"123"},
-                processData: false,  // tell jQuery not to process the data
-                contentType: false,
-              }).done(function(data) {
-                console.log(data);
-              });
-          }
-
-
+          });
         }
-
+      }
     }
-
-  };
 
   return Application;
 };
